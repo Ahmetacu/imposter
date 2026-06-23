@@ -60,18 +60,18 @@ class PremiumCard extends StatelessWidget {
         gradient: AppColors.cardGradient,
         borderRadius: BorderRadius.circular(20),
         border: Border.all(
-          color: AppColors.borderSubtle.withValues(alpha: 0.6),
+          color: AppColors.borderSubtle.withOpacity(0.6),
           width: 1,
         ),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withValues(alpha: 0.4),
+            color: Colors.black.withOpacity(0.4),
             blurRadius: 16,
             offset: const Offset(0, 8),
           ),
           if (glowColor != null)
             BoxShadow(
-              color: glowColor!.withValues(alpha: 0.15),
+              color: glowColor!.withOpacity(0.15),
               blurRadius: 20,
               spreadRadius: -4,
             ),
@@ -86,8 +86,8 @@ class PremiumCard extends StatelessWidget {
         child: InkWell(
           onTap: onTap,
           borderRadius: BorderRadius.circular(20),
-          splashColor: AppColors.mysticPurple.withValues(alpha: 0.1),
-          highlightColor: AppColors.mysticPurple.withValues(alpha: 0.05),
+          splashColor: AppColors.mysticPurple.withOpacity(0.1),
+          highlightColor: AppColors.mysticPurple.withOpacity(0.05),
           child: card,
         ),
       );

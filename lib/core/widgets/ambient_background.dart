@@ -71,7 +71,7 @@ class _GlowOrb extends StatelessWidget {
         height: size,
         decoration: BoxDecoration(
           shape: BoxShape.circle,
-          color: color.withValues(alpha: opacity),
+          color: color.withOpacity(opacity),
         ),
       ),
     );

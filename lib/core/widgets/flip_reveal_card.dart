@@ -193,13 +193,13 @@ class _CardFront extends StatelessWidget {
         borderRadius: BorderRadius.circular(24),
         border: Border.all(
           color: isPressed
-              ? AppColors.mysticPurple.withValues(alpha: 0.5)
-              : AppColors.borderSubtle.withValues(alpha: 0.6),
+              ? AppColors.mysticPurple.withOpacity(0.5)
+              : AppColors.borderSubtle.withOpacity(0.6),
           width: isPressed ? 1.5 : 1,
         ),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withValues(alpha: 0.45),
+            color: Colors.black.withOpacity(0.45),
             blurRadius: 20,
             offset: const Offset(0, 12),
           ),
@@ -231,7 +231,7 @@ class _CardFront extends StatelessWidget {
               boxShadow: isPressed
                   ? [
                       BoxShadow(
-                        color: AppColors.mysticPurple.withValues(alpha: 0.4),
+                        color: AppColors.mysticPurple.withOpacity(0.4),
                         blurRadius: 20,
                       ),
                     ]
@@ -325,8 +325,8 @@ class _PulseHintState extends State<_PulseHint>
               Icon(
                 Icons.swipe_vertical_rounded,
                 size: 16,
-                color: AppColors.mysticPurple.withValues(
-                  alpha: 0.6 + _pulse.value * 0.4,
+                color: AppColors.mysticPurple.withOpacity(
+                  0.6 + _pulse.value * 0.4,
                 ),
               ),
               const SizedBox(width: 6),
@@ -339,7 +339,7 @@ class _PulseHintState extends State<_PulseHint>
               ),
               Text(
                 '  ·  ',
-                style: TextStyle(color: AppColors.textMuted.withValues(alpha: 0.5)),
+                style: TextStyle(color: AppColors.textMuted.withOpacity(0.5)),
               ),
               Text(
                 'Dokun',
@@ -377,7 +377,7 @@ class _WordFace extends StatelessWidget {
         ),
         borderRadius: BorderRadius.circular(24),
         border: Border.all(
-          color: AppColors.neonGreen.withValues(alpha: 0.35),
+          color: AppColors.neonGreen.withOpacity(0.35),
           width: 1.5,
         ),
         boxShadow: const [
@@ -394,10 +394,10 @@ class _WordFace extends StatelessWidget {
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 5),
             decoration: BoxDecoration(
-              color: AppColors.neonGreen.withValues(alpha: 0.12),
+              color: AppColors.neonGreen.withOpacity(0.12),
               borderRadius: BorderRadius.circular(8),
               border: Border.all(
-                color: AppColors.neonGreen.withValues(alpha: 0.25),
+                color: AppColors.neonGreen.withOpacity(0.25),
               ),
             ),
             child: Text(
@@ -484,17 +484,17 @@ class _ImpostorFaceState extends State<_ImpostorFace>
             ),
             borderRadius: BorderRadius.circular(24),
             border: Border.all(
-              color: AppColors.danger.withValues(alpha: 0.4 + glow * 0.3),
+              color: AppColors.danger.withOpacity(0.4 + glow * 0.3),
               width: 1.5,
             ),
             boxShadow: [
               BoxShadow(
-                color: AppColors.danger.withValues(alpha: glow),
+                color: AppColors.danger.withOpacity(glow),
                 blurRadius: 32,
                 spreadRadius: -8,
               ),
               BoxShadow(
-                color: AppColors.mysticPurple.withValues(alpha: glow * 0.5),
+                color: AppColors.mysticPurple.withOpacity(glow * 0.5),
                 blurRadius: 24,
               ),
             ],
@@ -516,7 +516,7 @@ class _ImpostorFaceState extends State<_ImpostorFace>
                   Icon(
                     Icons.psychology_alt_rounded,
                     size: 56,
-                    color: AppColors.danger.withValues(alpha: 0.85 + glow * 0.15),
+                    color: AppColors.danger.withOpacity(0.85 + glow * 0.15),
                   ),
                   const SizedBox(height: 20),
                   ShaderMask(
@@ -569,7 +569,7 @@ class _MysteryPatternPainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     final paint = Paint()
-      ..color = AppColors.mysticPurple.withValues(alpha: opacity)
+      ..color = AppColors.mysticPurple.withOpacity(opacity)
       ..style = PaintingStyle.stroke
       ..strokeWidth = 1;
 

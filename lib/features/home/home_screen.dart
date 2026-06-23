@@ -207,7 +207,7 @@ class _LogoSection extends StatelessWidget {
             gradient: AppColors.purpleGlowGradient,
             boxShadow: [
               BoxShadow(
-                color: AppColors.mysticPurple.withValues(alpha: glowIntensity),
+                color: AppColors.mysticPurple.withOpacity(glowIntensity),
                 blurRadius: 32 + pulseValue * 8,
                 spreadRadius: -4,
               ),
@@ -259,7 +259,7 @@ class _LogoSection extends StatelessWidget {
             borderRadius: BorderRadius.circular(2),
             boxShadow: [
               BoxShadow(
-                color: AppColors.neonGreen.withValues(alpha: 0.5),
+                color: AppColors.neonGreen.withOpacity(0.5),
                 blurRadius: 8,
               ),
             ],
@@ -278,10 +278,10 @@ class _PassPlayBadge extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 6),
       decoration: BoxDecoration(
-        color: AppColors.surface.withValues(alpha: 0.8),
+        color: AppColors.surface.withOpacity(0.8),
         borderRadius: BorderRadius.circular(20),
         border: Border.all(
-          color: AppColors.neonGreen.withValues(alpha: 0.3),
+          color: AppColors.neonGreen.withOpacity(0.3),
         ),
       ),
       child: Row(
@@ -334,7 +334,7 @@ class _IconButton extends StatelessWidget {
           width: 44,
           height: 44,
           decoration: BoxDecoration(
-            color: AppColors.surface.withValues(alpha: 0.6),
+            color: AppColors.surface.withOpacity(0.6),
             borderRadius: BorderRadius.circular(12),
             border: Border.all(color: AppColors.borderSubtle),
           ),

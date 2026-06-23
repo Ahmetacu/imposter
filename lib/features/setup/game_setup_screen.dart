@@ -292,10 +292,10 @@ class _StepperButton extends StatelessWidget {
           decoration: BoxDecoration(
             color: enabled
                 ? AppColors.surfaceHigh
-                : AppColors.surface.withValues(alpha: 0.5),
+                : AppColors.surface.withOpacity(0.5),
             borderRadius: BorderRadius.circular(12),
             border: Border.all(
-              color: enabled ? AppColors.borderSubtle : AppColors.borderSubtle.withValues(alpha: 0.3),
+              color: enabled ? AppColors.borderSubtle : AppColors.borderSubtle.withOpacity(0.3),
             ),
           ),
           child: Icon(
@@ -346,8 +346,8 @@ class _PackTile extends StatelessWidget {
               borderRadius: BorderRadius.circular(20),
               border: Border.all(
                 color: isSelected
-                    ? AppColors.mysticPurple.withValues(alpha: 0.6)
-                    : AppColors.borderSubtle.withValues(alpha: 0.6),
+                    ? AppColors.mysticPurple.withOpacity(0.6)
+                    : AppColors.borderSubtle.withOpacity(0.6),
               ),
               boxShadow: isSelected
                   ? [
@@ -423,12 +423,12 @@ class _PlayerNameField extends StatelessWidget {
           ),
       decoration: InputDecoration(
         hintText: 'Oyuncu ${index + 1}',
-        hintStyle: TextStyle(color: AppColors.textMuted.withValues(alpha: 0.6)),
+        hintStyle: TextStyle(color: AppColors.textMuted.withOpacity(0.6)),
         filled: true,
-        fillColor: AppColors.surface.withValues(alpha: 0.8),
+        fillColor: AppColors.surface.withOpacity(0.8),
         prefixIcon: Icon(
           Icons.person_outline_rounded,
-          color: AppColors.textMuted.withValues(alpha: 0.7),
+          color: AppColors.textMuted.withOpacity(0.7),
           size: 20,
         ),
         border: OutlineInputBorder(
@@ -438,7 +438,7 @@ class _PlayerNameField extends StatelessWidget {
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(14),
           borderSide: BorderSide(
-            color: AppColors.borderSubtle.withValues(alpha: 0.6),
+            color: AppColors.borderSubtle.withOpacity(0.6),
           ),
         ),
         focusedBorder: OutlineInputBorder(

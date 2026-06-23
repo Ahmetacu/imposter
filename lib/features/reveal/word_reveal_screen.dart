@@ -213,7 +213,7 @@ class _TopBar extends StatelessWidget {
         Container(
           padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 6),
           decoration: BoxDecoration(
-            color: AppColors.surface.withValues(alpha: 0.7),
+            color: AppColors.surface.withOpacity(0.7),
             borderRadius: BorderRadius.circular(20),
             border: Border.all(color: AppColors.borderSubtle),
           ),
@@ -249,7 +249,7 @@ class _CircleIconButton extends StatelessWidget {
           width: 44,
           height: 44,
           decoration: BoxDecoration(
-            color: AppColors.surface.withValues(alpha: 0.6),
+            color: AppColors.surface.withOpacity(0.6),
             borderRadius: BorderRadius.circular(12),
             border: Border.all(color: AppColors.borderSubtle),
           ),
@@ -289,7 +289,7 @@ class _ProgressBar extends StatelessWidget {
               boxShadow: isActive
                   ? [
                       BoxShadow(
-                        color: AppColors.mysticPurple.withValues(alpha: 0.5),
+                        color: AppColors.mysticPurple.withOpacity(0.5),
                         blurRadius: 6,
                       ),
                     ]
