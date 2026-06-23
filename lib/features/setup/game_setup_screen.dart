@@ -117,7 +117,7 @@ class _GameSetupScreenState extends State<GameSetupScreen> {
                     child: ListView(
                       padding: const EdgeInsets.fromLTRB(24, 16, 24, 24),
                       children: [
-                        _SectionTitle(
+                        const _SectionTitle(
                           icon: Icons.groups_outlined,
                           title: 'Oyuncu Sayısı',
                           subtitle: 'En az ${WordPool.minPlayers} oyuncu',
@@ -143,7 +143,7 @@ class _GameSetupScreenState extends State<GameSetupScreen> {
                           ),
                         ),
                         const SizedBox(height: 32),
-                        _SectionTitle(
+                        const _SectionTitle(
                           icon: Icons.badge_outlined,
                           title: 'Oyuncu İsimleri',
                           subtitle: 'Boş bırakılırsa varsayılan isim kullanılır',
@@ -351,10 +351,10 @@ class _PackTile extends StatelessWidget {
               ),
               boxShadow: isSelected
                   ? [
-                      BoxShadow(
+                      const BoxShadow(
                         color: AppColors.mysticPurpleGlow,
                         blurRadius: 16,
-                        offset: const Offset(0, 4),
+                        offset: Offset(0, 4),
                       ),
                     ]
                   : null,

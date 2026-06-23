@@ -204,7 +204,7 @@ class _CardFront extends StatelessWidget {
             offset: const Offset(0, 12),
           ),
           if (isPressed)
-            BoxShadow(
+            const BoxShadow(
               color: AppColors.mysticPurpleGlow,
               blurRadius: 32,
               spreadRadius: -4,
@@ -222,7 +222,7 @@ class _CardFront extends StatelessWidget {
               shape: BoxShape.circle,
               gradient: isPressed
                   ? AppColors.purpleGlowGradient
-                  : LinearGradient(
+                  : const LinearGradient(
                       colors: [
                         AppColors.surfaceHigh,
                         AppColors.surface,
@@ -380,11 +380,11 @@ class _WordFace extends StatelessWidget {
           color: AppColors.neonGreen.withValues(alpha: 0.35),
           width: 1.5,
         ),
-        boxShadow: [
+        boxShadow: const [
           BoxShadow(
             color: AppColors.neonGreenGlow,
             blurRadius: 28,
-            offset: const Offset(0, 8),
+            offset: Offset(0, 8),
           ),
         ],
       ),

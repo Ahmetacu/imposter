@@ -351,7 +351,7 @@ class _RoundCompleteViewState extends State<_RoundCompleteView>
                 child: Container(
                   width: 96,
                   height: 96,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     shape: BoxShape.circle,
                     gradient: AppColors.greenAccentGradient,
                     boxShadow: [
