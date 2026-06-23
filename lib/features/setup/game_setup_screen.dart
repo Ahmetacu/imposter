@@ -383,7 +383,7 @@ class _PackTile extends StatelessWidget {
                         '$wordCount kelime',
                         style: textTheme.bodySmall?.copyWith(
                           color: isSelected
-                              ? AppColors.textPrimary.withValues(alpha: 0.7)
+                              ? AppColors.textPrimary.withOpacity(0.7)
                               : AppColors.textMuted,
                         ),
                       ),
